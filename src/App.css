@@ -1,0 +1,38 @@
+body {
+  background-color: #3e3e3e3e;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  flex-direction: column;
+}
+
+.container_cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.card {
+  font-size: 100px;
+  padding: 5px;
+  color: #000000;
+  background-color: #000000;
+  border-radius: 10px;
+  transition: color 200ms ease;
+}
+
+.active {
+  color: rgb(224, 224, 224);
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 1rem;
+}
